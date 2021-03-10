@@ -11,14 +11,14 @@
 3. **Assignment 3 -**
     This Assignment contains 2 tasks,
     * **Task 1:  Sementic Segmentation** 
-           1. Download and extract the bags dataset:
-           2. Write a pytorch Dataset class which can iterate over the dataset
-           3. Train a fully-convolutional network on the training dataset
-           4. Report the mean IoU score after each epoch for both training dataset and validation dataset.
-           5. Visualize your network output on one image of the validation set
+        1. Download and extract the bags dataset:
+        2. Write a pytorch Dataset class which can iterate over the dataset
+        3. Train a fully-convolutional network on the training dataset
+        4. Report the mean IoU score after each epoch for both training dataset and validation dataset.
+        5. Visualize your network output on one image of the validation set
 
     * **Task 2:  Visualizing Convolutional Neural Networks** 
-           1.Download a pretrained AlexNet model and plot the weights of the First convolutional layer.
+        1.Download a pretrained AlexNet model and plot the weights of the First convolutional layer.
 
 4. **Assignment 4 -** Sentiment Analysis Using RNN and LSTM
     * In this exercise, you will understand and implement the below concepts :
