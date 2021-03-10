@@ -18,6 +18,6 @@
            5. Visualize your network output on one image of the validation set
 
     * **Task 2:  Visualizing Convolutional Neural Networks** 
-           1.Download a pretrained AlexNet model and plot the weights of the rst convolutional layer.
+           1.Download a pretrained AlexNet model and plot the weights of the First convolutional layer.
 
 
