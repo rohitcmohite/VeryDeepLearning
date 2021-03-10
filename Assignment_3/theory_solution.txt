@@ -1,0 +1,36 @@
+1.1 Semantic Segmentation
+
+1. How can a fully connected layer be realized using a convolutional layer?
+> Set the kernel size to cover the entire input image.
+
+2. What is the importance of skip connections in a CNN for image segmentation and object detection problems?
+> Without skip connections, a lot of information would be lost during down-sampling. Thus, it would be very hard to recognize small objects
+
+3. What does the ground truth look like in semantic segmentation and which loss function is typically used for training?
+> Each pixel is represented by a one-hot encoding. The shape of the ground truth would be (height, width, num_classes)
+> Since each pixel represents a probability distribution, Cross-Entropy Loss is used for training. Alternatively, Binary Cross Entropy can be used for two-class problems
+
+4. Why is accuracy not a good measure to evaluate semantic segmentation networks? Which measure is better-suited?
+> If classes are imbalanced (typically, background is overrepresented), outputting only the most frequent class would already give a very good accuracy.
+> Better: mean Intersection over Union. It computes the Intersection over Union for each class and then returns the mean value. Thus, a class imbalance can not skew the results.
+
+
+
+
+2.1 Visualization
+
+1. What is receptive field of a convolutional filter?
+> The receptive field of a convolutional filter is its kernel size, i.e. the window that affects its output.
+
+2. What is the effective receptive field of a convolution layer?
+> The effective receptive field in a convolutional neural network refers to the part of the input image that is visible to one filter at a time. The effective receptive field increases linearly as we stack more convolutional layers.
+
+3. How can the effective receptive field of a convolution layer be computed? (Formula, no closed-form)
+> receptive_field(0) = 1 
+> receptive_field(l) = receptive_field(l-1) + (k-1) * jump(l-1)
+> jump(0) = 1
+> jump(l) = jump(l-1) * s
+> l: current layer (conv or pool), k: kernel size, s: stride
+
+4. What is the receptive field of a fully-connected layer?
+> In a fully-connected layer, every neuron is affected by each input. Hence, the receptive field of a fully-connected layer is the entire input.
