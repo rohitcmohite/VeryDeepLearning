@@ -20,4 +20,22 @@
     * **Task 2:  Visualizing Convolutional Neural Networks** 
            1.Download a pretrained AlexNet model and plot the weights of the First convolutional layer.
 
+4. **Assignment 4 -** Sentiment Analysis Using RNN and LSTM
+    * In this exercise, you will understand and implement the below concepts :
+
+    *   Reading a text dataset.
+    *   Pre-processing the text such as Stopwords Removal etc.
+    *   Word embedding 
+        1.   Vocabulary Indexing
+        2.   Glove embedding
+    *   Implementing Dataloaders
+    *   A Neural Network
+        1.   RNNs
+        2.   LSTMs
+    *   Evaluation of the network
+
+
+    The task here is to develop a simple sentiment analysis model for a dataset by understanding if the review is positive or negative for each statement.
+    
+
 
